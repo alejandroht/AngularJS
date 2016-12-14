@@ -11,18 +11,17 @@ function LunchCheckController($scope) {
   $scope.textField;
 
   $scope.showMessage = function () {
-    //return "Yaakov likes to eat healthy snacks at night!";
-  
+    
   	var text = $scope.textField;
   	
   	var arr = text.split(",");
 
   	if (arrayElements(arr) <= 3) {
-  		$scope.message = "All good!!!";
+  		$scope.message = "Enjoy!";
   	} 
 
   	if (arrayElements(arr) > 3) {
-  		$scope.message = "You are in trouble!!!";	
+  		$scope.message = "Too much!";	
   	}
 
     console.log(arrayElements(arr));
